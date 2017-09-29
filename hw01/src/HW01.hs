@@ -25,6 +25,7 @@ sumDigits :: [Integer] -> Integer
 sumDigits [] = 0
 sumDigits (x:[]) = x
 sumDigits (x:ys) =
+  -- CM: see comment in pull request
   (x `div` 10) + (x `mod` 10) + sumDigits ys
 
 validate :: Integer -> Bool
